@@ -16,19 +16,13 @@ const Home: React.FC = () => {
         url=""
       />
 
-      <div className="md:p-[4rem] container mx-auto h-screen w-screen">
+      <div className="md:p-[4rem] container mx-auto h-screen w-screen flex flex-col justify-between">
         <Header />
+        <Content />
+        <Footer />
 
-        <div className="flex items-center justify-between h-[calc(100vh-8rem)]">
-          {/* Left */}
-          <div className="flex flex-col justify-between w-[34rem]">
-            <Content />
-            <Footer />
-          </div>
-
-          {/* Right */}
-          <div className=""></div>
-        </div>
+        {/* Right */}
+        {/* <div className=""></div> */}
       </div>
     </React.Fragment>
   );
@@ -36,7 +30,7 @@ const Home: React.FC = () => {
 
 const Content = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-[34rem]">
       <p className="text-accent2 tracking-[0.4em] mb-[1rem]">
         STREAMLINED, SOCIAL, SLEEK
       </p>
