@@ -46,7 +46,7 @@ const Content = () => {
   return (
     <div className="flex flex-col sm:mx-auto lg:m-0 text-center lg:text-left sm:w-[23rem] md:w-[34rem]">
       <p className="text-accent2 text-[0.65rem] md:text-[0.8rem] lg:text-[1rem] tracking-[0.4em] mb-[1rem] font-semibold">
-        STREAMLINED, SOCIAL, SLEEK
+        STREAMLINED, SOCIAL, SLEEK.
       </p>
 
       <h1 className="font-bold text-[1.6rem] sm:text-[1.9rem] lg:text-[2.3rem] xl:text-[2.8rem] 2xl:text-[3.2rem] 3xl:text-[3.5rem] sm:leading-[2.5rem] lg:leading-[3.6rem] tracking-wider mb-[1.1rem] md:mb-[1.3rem] lg:mb-[1.5rem]">
