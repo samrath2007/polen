@@ -17,17 +17,24 @@ const Home: React.FC = () => {
         url=""
       />
 
-      <div className="p-[2rem] md:p-[4rem] mx-auto h-screen w-screen flex flex-col justify-between">
+      <div className="p-[2rem] md:p-[4rem] mx-auto h-screen w-screen flex flex-col justify-between z-999">
         <Header />
         <Content />
         <Footer />
       </div>
 
-      {/* Right */}
+      {/* LG+ Vector */}
       <img
         src="/images/corner_vector.svg"
         alt=""
         className="absolute top-0 right-0 hidden lg:block lg:h-[40rem] lg:w-[40rem] xl:h-[50rem] xl:w-[50rem] 2xl:h-[60rem] 2xl:w-[60rem]"
+      />
+
+      {/* Normal Vector */}
+      <img
+        src="/images/purple_aura.svg"
+        alt=""
+        className="absolute top-0 block lg:hidden w-screen h-[calc(100vh-50%)] z-0"
       />
     </div>
   );
