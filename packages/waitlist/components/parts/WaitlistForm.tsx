@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Alert from "~/components/ui/Alert";
 
+import Alert from "~/components/ui/Alert";
 import Button from "~/components/ui/Button";
 import Input from "~/components/ui/Input";
 
+import { useRouter } from "next/router";
+import { discordUrl } from "~/constants";
+
 const WaitlistForm: React.FC = () => {
+  const router = useRouter();
+
   const [showAlert, setShowAlert] = useState({
     type: "",
     show: false,
@@ -23,7 +28,7 @@ const WaitlistForm: React.FC = () => {
     });
     setTimeout(() => {
       setShowAlert({ type: "", show: false, message: "" });
-    }, 5000);
+    }, 4000);
   };
 
   const submitWaitlistForm = async (
@@ -54,6 +59,10 @@ const WaitlistForm: React.FC = () => {
         setSuccess(true);
         setLoading(false);
         setEmail("");
+
+        setTimeout(() => {
+          router.push(discordUrl);
+        }, 4000);
       }
     } catch (err) {
       setLoading(false);
