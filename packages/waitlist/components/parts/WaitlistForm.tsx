@@ -98,7 +98,7 @@ const WaitlistForm: React.FC = () => {
             loading={loading}
             style={{
               background:
-                "linear-gradient(97.89deg, #4C53FF 2.31%, #7B4CFF 100.81%) !important",
+                "linear-gradient(97.89deg, #4C53FF 2.31%, #7B4CFF 100.81%)",
             }}
           >
             Get Early Access

@@ -57,7 +57,7 @@ const Content = () => {
           type="button"
           style={{
             background:
-              "linear-gradient(97.89deg, #4C53FF 2.31%, #7B4CFF 100.81%) !important",
+              "linear-gradient(97.89deg, #4C53FF 2.31%, #7B4CFF 100.81%)",
             width: "10rem",
             margin: "0 auto",
           }}
