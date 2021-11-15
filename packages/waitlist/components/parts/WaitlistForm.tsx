@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import Alert from '~/components/ui/Alert';
+import React, { useState } from "react";
+import axios from "axios";
+import Alert from "~/components/ui/Alert";
 
-import Button from '~/components/ui/Button';
-import Input from '~/components/ui/Input';
+import Button from "~/components/ui/Button";
+import Input from "~/components/ui/Input";
 
 const WaitlistForm: React.FC = () => {
   const [showAlert, setShowAlert] = useState({
-    type: '',
+    type: "",
     show: false,
-    message: '',
+    message: "",
   });
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -22,7 +22,7 @@ const WaitlistForm: React.FC = () => {
       message,
     });
     setTimeout(() => {
-      setShowAlert({ type: '', show: false, message: '' });
+      setShowAlert({ type: "", show: false, message: "" });
     }, 5000);
   };
 
@@ -31,12 +31,12 @@ const WaitlistForm: React.FC = () => {
   ) => {
     event.preventDefault();
 
-    if (!email) return showAndHideAlertBox('error', 'Please supply an email.');
+    if (!email) return showAndHideAlertBox("error", "Please supply an email.");
 
     try {
       setLoading(true);
       const { data } = await axios.post(
-        'https://getwaitlist.com/api/v1/waitlists/submit',
+        "https://getwaitlist.com/api/v1/waitlists/submit",
         {
           api_key: process.env.NEXT_PUBLIC_WAITLIST_API_KEY,
           email,
@@ -44,20 +44,20 @@ const WaitlistForm: React.FC = () => {
         },
         {
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
         }
       );
 
       if (data) {
-        showAndHideAlertBox('success', 'Success!');
+        showAndHideAlertBox("success", "Success!");
         setSuccess(true);
         setLoading(false);
-        setEmail('');
+        setEmail("");
       }
     } catch (err) {
       setLoading(false);
-      showAndHideAlertBox('error', 'Something went wrong, try again later.');
+      showAndHideAlertBox("error", "Something went wrong, try again later.");
     }
   };
 
@@ -77,14 +77,21 @@ const WaitlistForm: React.FC = () => {
             type="email"
             name="email"
             placeholder="john@example.com"
-            style={{ width: '100%' }}
+            style={{ width: "100%" }}
             value={email}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
               e.preventDefault();
               setEmail(e.currentTarget.value);
             }}
           />
-          <Button type="submit" loading={loading}>
+          <Button
+            type="submit"
+            loading={loading}
+            style={{
+              background:
+                "linear-gradient(97.89deg, #4C53FF 2.31%, #7B4CFF 100.81%) !important",
+            }}
+          >
             Get Early Access
           </Button>
         </>

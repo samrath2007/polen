@@ -1,12 +1,11 @@
 import React from "react";
-
-import UilTwitter from "@iconscout/react-unicons/icons/uil-twitter-alt";
-import UilGithub from "@iconscout/react-unicons/icons/uil-github-alt";
-import UilInstagram from "@iconscout/react-unicons/icons/uil-instagram";
+import { UilGithub } from "../icons/UilGithub";
+import { UilInstagram } from "../icons/UilInstagram";
+import { UilTwitter } from "../icons/UilTwitter";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex items-center gap-2">
+    <footer className="flex items-center gap-[1rem]">
       <Social
         Icon={UilGithub}
         href="https://github.com/polenhq"
@@ -30,8 +29,8 @@ const Footer: React.FC = () => {
 
 const Social = ({ Icon, href, title }) => {
   return (
-    <a href={href} title={title}>
-      <Icon className="text-white hover:opacity-[0.6]" size="25" />
+    <a href={href} title={title} target="_blank">
+      <Icon className="fill-[#fff] hover:opacity-[0.6] h-[1.5rem] w-[1.5rem]" />
     </a>
   );
 };
