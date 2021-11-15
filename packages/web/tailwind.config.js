@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./pages/**/*.tsx', './components/**/*.tsx'],
-  darkMode: 'class', // or 'media' or 'class'
+  mode: "jit",
   theme: {
     colors: {
       accent: '#4C53FF',
