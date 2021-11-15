@@ -16,13 +16,17 @@ const Home: React.FC = () => {
         url=""
       />
 
-      <div className="md:p-[4rem] container mx-auto h-screen w-screen flex flex-col justify-between">
+      <div className="md:p-[4rem] relative container mx-auto h-screen w-screen flex flex-col justify-between overflow-hidden">
         <Header />
         <Content />
         <Footer />
 
         {/* Right */}
-        {/* <div className=""></div> */}
+        <img
+          src="/images/corner_vector.svg"
+          alt=""
+          className="absolute top-0 right-0 h-[50rem] w-[50rem]"
+        />
       </div>
     </React.Fragment>
   );
