@@ -4,7 +4,7 @@
 </p>
 
 <h1 align="center">Streamlined, Social, Sleek</h1>
-<p align="center">Meet an all-new take on open-source task management, powered by your community.</p>
+<p align="center">Polen is a social-first project management platform for open-source ventures.</p>
 
 <br> 
 
