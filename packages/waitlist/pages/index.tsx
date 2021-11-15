@@ -4,6 +4,7 @@ import HeadMeta from "~/components/partials/HeadMeta";
 import Header from "~/components/layout/Header";
 import Footer from "~/components/layout/Footer";
 import WaitlistForm from "~/components/parts/WaitlistForm";
+import Button from "~/components/ui/Button";
 
 const Home: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
         url=""
       />
 
-      <div className="md:p-[4rem] mx-auto h-screen w-screen flex flex-col justify-between">
+      <div className="p-[2rem] md:p-[4rem] mx-auto h-screen w-screen flex flex-col justify-between">
         <Header />
         <Content />
         <Footer />
@@ -34,21 +35,36 @@ const Home: React.FC = () => {
 
 const Content = () => {
   return (
-    <div className="flex flex-col md:w-[80%] md:mx-auto lg:m-0 lg:w-[34rem] text-center lg:text-left">
-      <p className="text-accent2 text-sm md:text-md lg:text-lg xl:text-xl tracking-[0.4em] mb-[1rem]">
+    <div className="flex flex-col sm:mx-auto lg:m-0 text-center lg:text-left sm:w-[23rem] md:w-[34rem]">
+      <p className="text-accent2 text-[0.65rem] md:text-[0.8rem] lg:text-[1rem] tracking-[0.4em] mb-[1rem]">
         STREAMLINED, SOCIAL, SLEEK
       </p>
 
-      <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl lg:leading-[3.6rem] tracking-wider mb-[0.6rem] md:mb-[1rem] lg:mb-[1.4rem]">
+      <h1 className="font-bold text-[1.4rem] sm:text-[1.9rem] lg:text-[2.3rem] xl:text-[2.8rem] 2xl:text-[3.2rem] 3xl:text-[3.5rem] sm:leading-[2.5rem] lg:leading-[3.6rem] tracking-wider mb-[1.1rem] md:mb-[1.3rem] lg:mb-[1.5rem]">
         Community-based Project Management.
       </h1>
 
-      <p className="text-[0.7rem] md:text-[1rem] lg:text-[1.2rem] tracking-wide leading-[2rem] text-lightGray mb-[0.9rem] md:mb-[1.3rem] lg:mb-[2rem] font-semibold">
+      <p className="text-[0.8rem] sm:text-[0.9rem] md:text-[1.1rem] lg:text-[1.2rem] tracking-wide lg:leading-[2rem] text-lightGray mb-[1.3rem] sm:mb-[1.7rem] lg:mb-[2rem]">
         Polen is a community-first project management tool for your open source
         ventures. Join the waitlist!
       </p>
 
-      <WaitlistForm />
+      <div className="hidden sm:block">
+        <WaitlistForm />
+      </div>
+      <div className="block sm:hidden w-full">
+        <Button
+          type="button"
+          style={{
+            background:
+              "linear-gradient(97.89deg, #4C53FF 2.31%, #7B4CFF 100.81%) !important",
+            width: "10rem",
+            margin: "0 auto",
+          }}
+        >
+          Get Early Access
+        </Button>
+      </div>
     </div>
   );
 };
