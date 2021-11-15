@@ -17,7 +17,7 @@ const Button: React.FC<ButtonPropTypes> = ({
   return (
     <button
       type={type}
-      className={`flex items-center justify-center transition duration-100 ease-in ${
+      className={`flex items-center justify-center transition whitespace-nowrap m-0 duration-100 ease-in ${
         loading ? 'cursor-not-allowed' : 'cursor-pointer'
       } ${loading ? 'bg-loading' : 'bg-accent'} h-11 text-sm rounded p-4 ${
         !loading && 'hover:bg-hover'
