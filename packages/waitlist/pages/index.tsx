@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-import HeadMeta from '../src/components/partials/HeadMeta';
-import Footer from '../src/components/layout/Footer';
-import Header from '../src/components/layout/Header';
+import HeadMeta from '~/components/partials/HeadMeta';
+import Header from '~/components/layout/Header';
+import Footer from '~/components/layout/Footer';
 
 const Home: React.FC = () => {
   return (

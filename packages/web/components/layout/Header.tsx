@@ -1,4 +1,4 @@
-import WaitlistForm from '../parts/WaitlistForm';
+import WaitlistForm from '~/components/parts/WaitlistForm';
 
 const Header: React.FC = () => {
   return (

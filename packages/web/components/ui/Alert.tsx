@@ -1,5 +1,5 @@
-import AlertCircle from '../icons/AlertCircle';
-import Check from '../icons/Check';
+import AlertCircle from '~/components/icons/AlertCircle';
+import Check from '~/components/icons/Check';
 
 interface ErrorAlertPropTypes {
   type: string;
