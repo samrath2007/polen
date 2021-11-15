@@ -50,7 +50,7 @@ const Content = () => {
       </p>
 
       <h1 className="font-bold text-[1.6rem] sm:text-[1.9rem] lg:text-[2.3rem] xl:text-[2.8rem] 2xl:text-[3.2rem] 3xl:text-[3.5rem] sm:leading-[2.5rem] lg:leading-[3.6rem] tracking-wider mb-[1.1rem] md:mb-[1.3rem] lg:mb-[1.5rem]">
-        Community-based Project Management.
+        Community-based Project Management
       </h1>
 
       <p className="text-[0.8rem] sm:text-[0.9rem] md:text-[1.1rem] lg:text-[1.2rem] tracking-wide lg:leading-[2rem] text-lightGray mb-[1.3rem] sm:mb-[1.7rem] lg:mb-[2rem]">
