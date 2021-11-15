@@ -1,9 +1,9 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
 
-import HeadMeta from '~/components/partials/HeadMeta';
-import Header from '~/components/layout/Header';
-import Footer from '~/components/layout/Footer';
+import HeadMeta from "~/components/partials/HeadMeta";
+import Header from "~/components/layout/Header";
+import Footer from "~/components/layout/Footer";
+import WaitlistForm from "~/components/parts/WaitlistForm";
 
 const Home: React.FC = () => {
   return (
@@ -15,21 +15,43 @@ const Home: React.FC = () => {
         image=""
         url=""
       />
-      <div className="mx-auto flex flex-col justify-center items-center h-screen w-screen">
-        <div className="flex h-5/6 justify-between flex-col w-4/5">
-          <Image
-            src="/images/polen_white_text.png"
-            quality={90}
-            width={83}
-            height={33.31}
-            layout="fixed"
-            alt="Logo"
-          />
-          <Header />
-          <Footer />
+
+      <div className="md:p-[4rem] container mx-auto h-screen w-screen">
+        <Header />
+
+        <div className="flex items-center justify-between h-[calc(100vh-8rem)]">
+          {/* Left */}
+          <div className="flex flex-col justify-between w-[34rem]">
+            <Content />
+            <Footer />
+          </div>
+
+          {/* Right */}
+          <div className=""></div>
         </div>
       </div>
     </React.Fragment>
+  );
+};
+
+const Content = () => {
+  return (
+    <div className="flex flex-col">
+      <p className="text-accent2 tracking-[0.4em] mb-[1rem]">
+        STREAMLINED, SOCIAL, SLEEK
+      </p>
+
+      <h1 className="font-bold text-5xl leading-[3.6rem] tracking-wider mb-[1.4rem]">
+        Community-based Project Management.
+      </h1>
+
+      <p className="text-[1.2rem] tracking-wide leading-[2rem] text-lightGray mb-[2rem] font-semibold">
+        Polen is a community-first project management tool for your open source
+        ventures. Join the waitlist!
+      </p>
+
+      <WaitlistForm />
+    </div>
   );
 };
 
