@@ -27,14 +27,16 @@ const Home: React.FC = () => {
       <img
         src="/images/corner_vector.svg"
         alt=""
-        className="absolute top-0 right-0 hidden lg:block lg:h-[40rem] lg:w-[40rem] xl:h-[50rem] xl:w-[50rem] 2xl:h-[60rem] 2xl:w-[60rem]"
+        draggable={false}
+        className="select-none absolute top-0 right-0 hidden lg:block lg:h-[40rem] lg:w-[40rem] xl:h-[50rem] xl:w-[50rem] 2xl:h-[60rem] 2xl:w-[60rem]"
       />
 
       {/* Normal Vector */}
       <img
         src="/images/purple_aura.svg"
         alt=""
-        className="absolute top-0 block lg:hidden w-screen h-[calc(100vh-50%)] z-0"
+        draggable={false}
+        className="select-none absolute top-0 block lg:hidden w-screen h-[calc(100vh-50%)] z-0"
       />
     </div>
   );
