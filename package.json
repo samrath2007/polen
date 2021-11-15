@@ -1,15 +1,9 @@
 {
   "name": "polen",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "dev:web": "yarn workspace @polen/web dev"
-  },
+  "license": "Apache-2.0",
+  "scripts": {},
   "dependencies": {
     "typescript": "^4.4.4"
   }
