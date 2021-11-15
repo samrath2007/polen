@@ -45,7 +45,7 @@ const Home: React.FC = () => {
 const Content = () => {
   return (
     <div className="flex flex-col sm:mx-auto lg:m-0 text-center lg:text-left sm:w-[23rem] md:w-[34rem]">
-      <p className="text-accent2 text-[0.65rem] md:text-[0.8rem] lg:text-[1rem] tracking-[0.4em] mb-[1rem]">
+      <p className="text-accent2 text-[0.65rem] md:text-[0.8rem] lg:text-[1rem] tracking-[0.4em] mb-[1rem] font-semibold">
         STREAMLINED, SOCIAL, SLEEK
       </p>
 
