@@ -1,12 +1,17 @@
 module.exports = {
-  purge: [],
+  purge: ['./src/**/*.tsx'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     colors: {
-      accent: '#6E6BFC',
-      loading: '#a8a6fd',
-      hover: '#5856ca',
-      white: '#FFFFFFF',
+      accent: '#4C53FF',
+      accent2: '#8388FF',
+      loading: '#9498ff',
+      darkGray: '#1a1a1a',
+      errorAlert: '#BF0404',
+      successAlert: '#4BB543',
+      hover: '#3d42cc',
+      white: '#FFFFFF',
+      lightGray: '#A1A1A1',
     },
   },
   variants: {
