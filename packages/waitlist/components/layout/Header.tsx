@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header: React.FC = () => {
   return (
-    <header>
+    <header className="mx-auto lg:m-0">
       <Image
         src="/images/polen_white_text.png"
         quality={90}

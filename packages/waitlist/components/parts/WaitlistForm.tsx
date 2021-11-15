@@ -72,7 +72,7 @@ const WaitlistForm: React.FC = () => {
 
   return (
     <form
-      className="flex items-center justify-center bg-darkGray max-w-md rounded-lg p-2 h-13"
+      className="flex items-center justify-center bg-darkGray max-w-md rounded-lg p-2 h-13 mx-auto lg:m-0"
       onSubmit={submitWaitlistForm}
     >
       {success ? (
