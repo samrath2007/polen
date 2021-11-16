@@ -53,7 +53,7 @@ const WaitlistForm: React.FC = () => {
       );
 
       if (data) {
-        showAndHideAlertBox("success", "Success!");
+        showAndHideAlertBox("success", "You'll be notified for early access!");
         setSuccess(true);
         setLoading(false);
         setEmail("");
