@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
 const Social = ({ Icon, href, title }) => {
   return (
     <a href={href} title={title} target="_blank">
-      <Icon className="fill-[#fff] hover:opacity-[0.6] h-[1.5rem] w-[1.5rem]" />
+      <Icon className="fill-[#fff] hover:opacity-[0.6] duration-100 ease-in h-[1.5rem] w-[1.5rem]" />
     </a>
   );
 };

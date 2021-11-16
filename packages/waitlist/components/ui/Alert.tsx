@@ -10,7 +10,7 @@ interface ErrorAlertPropTypes {
 const ErrorAlert: React.FC<ErrorAlertPropTypes> = ({ type, message, show }) => {
   return (
     <div
-      className={`alert absolute text-sm flex z-10 items-center justify-center ${
+      className={`alert absolute z-10 text-sm flex items-center justify-center ${
         type === "success" ? "bg-successAlert" : "bg-errorAlert"
       } rounded p-2 w-1/4 h-16 top-8 right-8`}
       style={{

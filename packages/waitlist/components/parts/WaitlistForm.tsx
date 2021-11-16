@@ -5,14 +5,10 @@ import Alert from "~/components/ui/Alert";
 import Button from "~/components/ui/Button";
 import Input from "~/components/ui/Input";
 
+import Link from "next/link";
 import { DISCORD_SERVER_URL } from "~/constants";
 
-import Link from "next/link";
-import { useRouter } from "next/router";
-
 const WaitlistForm: React.FC = () => {
-  const router = useRouter();
-
   const [showAlert, setShowAlert] = useState({
     type: "",
     show: false,
