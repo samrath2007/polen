@@ -10,11 +10,11 @@ const Home: React.FC = () => {
   return (
     <div className="relative h-screen w-screen overflow-hidden">
       <HeadMeta
-        title="Polen ━ Meet an all-new take on open-source task management, powered by your community."
-        description=""
-        keywords=""
-        image=""
-        url=""
+        title="Polen ━ Streamlined, Social, Sleek."
+        description="Meet Polen, a community-first open source project management platform."
+        keywords="open-source, sleek, social, community, project-management, issue-tracking, real-time"
+        image="https://pbs.twimg.com/profile_banners/1417906965167095814/1637071393/1500x500"
+        url="https://polenhq.com"
       />
 
       <div className="p-[2rem] md:p-[4rem] mx-auto h-screen w-screen flex flex-col justify-between z-999">
