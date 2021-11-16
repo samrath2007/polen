@@ -30,7 +30,7 @@ const WaitlistForm: React.FC = () => {
   };
 
   const submitWaitlistForm = async (
-    event: React.FormEvent<HTMLInputElement>
+    event: React.FormEvent<HTMLFormElement>
   ) => {
     event.preventDefault();
 
