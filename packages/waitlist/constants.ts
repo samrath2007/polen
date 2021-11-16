@@ -1,1 +1,1 @@
-export const discordUrl = "https://discord.gg/wvJBBJBXSF";
+export const DISCORD_SERVER_URL = "https://discord.gg/wvJBBJBXSF";
