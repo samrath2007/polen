@@ -1,5 +1,5 @@
-import AlertCircle from '~/components/icons/AlertCircle';
-import Check from '~/components/icons/Check';
+import AlertCircle from "~/components/icons/AlertCircle";
+import Check from "~/components/icons/Check";
 
 interface ErrorAlertPropTypes {
   type: string;
@@ -10,18 +10,18 @@ interface ErrorAlertPropTypes {
 const ErrorAlert: React.FC<ErrorAlertPropTypes> = ({ type, message, show }) => {
   return (
     <div
-      className={`alert absolute text-sm flex items-center justify-center ${
-        type === 'success' ? 'bg-successAlert' : 'bg-errorAlert'
+      className={`alert absolute text-sm flex z-10 items-center justify-center ${
+        type === "success" ? "bg-successAlert" : "bg-errorAlert"
       } rounded p-2 w-1/4 h-16 top-8 right-8`}
       style={{
-        display: `${show ? 'flex' : 'none'}`,
+        display: `${show ? "flex" : "none"}`,
       }}
     >
-      {type === 'success' ? (
+      {type === "success" ? (
         <Check width={20} height={20} />
       ) : (
         <AlertCircle width={20} height={20} />
-      )}{' '}
+      )}{" "}
       <p className="ml-2">{message}</p>
     </div>
   );

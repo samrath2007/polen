@@ -5,8 +5,10 @@ import Alert from "~/components/ui/Alert";
 import Button from "~/components/ui/Button";
 import Input from "~/components/ui/Input";
 
+import { DISCORD_SERVER_URL } from "~/constants";
+
+import Link from "next/link";
 import { useRouter } from "next/router";
-import { discordUrl } from "~/constants";
 
 const WaitlistForm: React.FC = () => {
   const router = useRouter();
@@ -55,14 +57,10 @@ const WaitlistForm: React.FC = () => {
       );
 
       if (data) {
-        showAndHideAlertBox("success", "Success!");
+        showAndHideAlertBox("success", "You'll be notified for early access!");
         setSuccess(true);
         setLoading(false);
         setEmail("");
-
-        setTimeout(() => {
-          router.push(discordUrl);
-        }, 4000);
       }
     } catch (err) {
       setLoading(false);
@@ -76,9 +74,16 @@ const WaitlistForm: React.FC = () => {
       onSubmit={submitWaitlistForm}
     >
       {success ? (
-        <p className="h-11 flex items-center text-successAlert">
-          You'll be notified for early access.
-        </p>
+        <>
+          <Link href={DISCORD_SERVER_URL}>
+            <a
+              className="h-11 flex items-center whitespace-pre text-center underline text-successAlert"
+              target="_blank"
+            >
+              Join our discord server to receive updates on Polen!
+            </a>
+          </Link>{" "}
+        </>
       ) : (
         <>
           <Input

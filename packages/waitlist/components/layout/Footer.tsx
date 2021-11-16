@@ -6,7 +6,7 @@ import { UilTwitter } from "../icons/UilTwitter";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex items-center gap-[1rem] mx-auto lg:m-0">
+    <footer className="flex items-center gap-[2rem] mx-auto lg:m-0">
       <Social
         Icon={UilGithub}
         href="https://github.com/polenhq"
