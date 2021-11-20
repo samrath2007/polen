@@ -10,10 +10,10 @@ const Home: React.FC = () => {
   return (
     <div className="relative h-screen w-screen overflow-hidden">
       <HeadMeta
-        title="Polen ━ Streamlined, Social, Sleek."
-        description="Meet Polen, a community-first open source project management platform."
-        keywords="open-source, sleek, social, community, project-management, issue-tracking, real-time"
-        image="https://pbs.twimg.com/profile_banners/1417906965167095814/1637071393/1500x500"
+        title="Polen ━ Streamlined, Sleek, Secure."
+        description="Meet Polen, An intuitive project management platform built for powerful collaboration."
+        keywords="open-source, sleek, secure, streamlined, project-management, issue-tracking, real-time, team, collaboration"
+        image="https://images-ext-1.discordapp.net/external/ax6Ndwef57xe55nqNFsj99Zd2i9eER36Pyw0jRguPAw/%3Fsize%3D4096/https/cdn.discordapp.com/icons/867469144861048832/9e29345ac822af59ab2177fad35fe707.png?width=977&height=977"
         url="https://polenhq.com"
       />
 
@@ -45,17 +45,17 @@ const Home: React.FC = () => {
 const Content = () => {
   return (
     <div className="flex flex-col sm:mx-auto lg:m-0 text-center lg:text-left sm:w-[23rem] md:w-[34rem]">
-      <p className="text-accent2 text-[0.65rem] md:text-[0.8rem] lg:text-[1rem] tracking-[0.4em] mb-[1rem] font-semibold">
-        STREAMLINED, SOCIAL, SLEEK.
+      <p className="text-accent2 text-[0.65rem] md:text-[0.8rem] lg:text-[1rem] tracking-[0.4em] mb-[1rem] font-semibold uppercase">
+        Streamlined, Sleek, Secure.
       </p>
 
       <h1 className="font-bold text-[1.6rem] sm:text-[1.9rem] lg:text-[2.3rem] xl:text-[2.8rem] 2xl:text-[3.2rem] 3xl:text-[3.5rem] sm:leading-[2.5rem] lg:leading-[3.6rem] tracking-wider mb-[1.1rem] md:mb-[1.3rem] lg:mb-[1.5rem]">
-        Community-based Project Management
+        Designed For Effective Teamwork.
       </h1>
 
       <p className="text-[0.8rem] sm:text-[0.9rem] md:text-[1.1rem] lg:text-[1.2rem] tracking-wide lg:leading-[2rem] text-lightGray mb-[1.3rem] sm:mb-[1.7rem] lg:mb-[2rem]">
-        Polen is a community-first project management tool for your open source
-        ventures. Join the waitlist!
+        Polen is an intuitive project management platform built for powerful
+        collaboration. Join the waitlist!
       </p>
 
       <div className="hidden sm:block">
