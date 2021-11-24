@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="https://pbs.twimg.com/profile_images/1459583531265368065/6EbJzRO4_400x400.jpg" style="height: 200px; width: 200px;" />
+<img src="https://polenhq.com/images/polen_white_text.png" style="height: 200px; width: 200px;" />
 </p>
 
 <h1 align="center">Streamlined, Social, Sleek</h1>
